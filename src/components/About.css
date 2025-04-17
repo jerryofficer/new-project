@@ -1,0 +1,171 @@
+/* Base styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-header img {
+  width: 100%;
+  height: auto;
+
+}
+
+.about-header-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.about-content h2,
+.team-section h2,
+.vision-section h2,
+.about-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content p,
+.team-section p,
+.vision-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Highlights Section */
+.about-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.highlight-item:hover {
+  transform: scale(1.05);
+}
+
+/* Team Section */
+.team img {
+  transition: transform 0.3s;
+}
+
+.team img:hover {
+  transform: scale(1.1);
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Gallery */
+.gallery img {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .about-header-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-header-text p {
+    font-size: 1rem;
+  }
+
+  .about-content h2,
+  .team-section h2,
+  .vision-section h2,
+  .about-gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .team-section p,
+  .vision-section p {
+    font-size: 1rem;
+  }
+
+  .about-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlight-item {
+    width: 90%;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-header-text p {
+    font-size: 0.9rem;
+  }
+
+  .team img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+.about-header {
+
+  background-image: url("https://i.pinimg.com/474x/81/6c/8b/816c8b6f8e701c5de496e4d0e8f91726.jpg");
+}
+
+.about-content {
+  background-color: #ffffff; /* White for the content section */
+  padding: 20px;
+}
+
+.team-section {
+  background-color: #f9f9f9; /* Very light gray for the team section */
+  padding: 20px;
+}
+
+.vision-section {
+  background-color: #f0f0f0; /* Another shade of light gray */
+  padding: 20px;
+}
+
+.about-gallery {
+  background-color: #fff; /* White for the gallery section */
+  padding: 20px;
+}
+

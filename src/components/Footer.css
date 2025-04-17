@@ -1,0 +1,109 @@
+/* General Footer Styling */
+footer {
+    background: linear-gradient(145deg, #1c1c1c, #333);
+    color: #fff;
+    padding: 2rem 1rem;
+    perspective: 1000px; /* Adds 3D perspective */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    transform: rotateY(0deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-section:hover {
+    transform: rotateY(15deg); /* 3D hover effect */
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    color: #f4b400;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f4b400;
+    margin-top: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #f4b400;
+}
+
+/* Social Media Icons */
+.icons a {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: #f4b400;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+}
+
+/* Animation for Smooth Slide */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        text-align: center;
+    }
+}

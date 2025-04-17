@@ -1,0 +1,35 @@
+.kidswintwinter img{
+  width: 300px;
+  border-radius: 10%;
+
+}
+.party img{
+    width: 300px;
+  border-radius: 10%;
+
+}
+.kids{
+  display: flex;
+   gap:80px
+}
+.winter img{
+     width: 300px;
+  border-radius: 70%;
+}
+.chillready img{
+    width: 270px;
+  border-radius: 10%; 
+}
+
+@media (max-width:786px) {
+  .kids{
+    display: block;
+
+  }
+ 
+}
+.kidsvc img{
+  width: 100%;
+  height: 400px;
+}
+
