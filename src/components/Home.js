@@ -223,6 +223,8 @@ const Home = () => {
           data-aos-duration="2000">
        
         <h1>Kids Section</h1>
+
+          {/* slider */}
         <div className="box">
          
         {images.map((image, index) => (
@@ -234,6 +236,7 @@ const Home = () => {
           </span>
         ))}
           </div>
+          
         </div>
       </center>
       <center>

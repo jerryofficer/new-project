@@ -12,7 +12,7 @@ import SignIn from './components/SignIn'
 import Spla from './components/Spla';
 import Products from './components/Products';
 import Kids from './components/Kids';
-import CartContext from './components/CartContext';
+// import CartContext from './components/CartContext';
 
 import { Router, Route, Routes } from 'react-router-dom';
 import { useState,useEffect } from 'react';

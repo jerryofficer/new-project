@@ -5,6 +5,7 @@ body{
     color: #eee;
     font-family: Poppins;
     font-size: 12px;
+    overflow-x: hidden;
 
 }
 
@@ -113,6 +114,8 @@ header a{
     object-fit: cover;
     border-radius: 20px;
 }
+
+
 .thumbnail .item .content{
     color: #fff;
     position: absolute;
@@ -310,6 +313,9 @@ header a{
     .carousel .list .item .content .title{
         font-size: 30px;
     }
+    .thumbnail .item img{
+        display: none;
+    }
 }
 
 
@@ -377,22 +383,3 @@ header a{
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
